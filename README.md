@@ -32,8 +32,13 @@ Me gusta el ciclo completo: del componente en el navegador al endpoint que lo al
 
 ## 🚀 Proyectos destacados
 
-- **[Nombre del proyecto 1]**: breve descripción (React + FastAPI).
-- **[Nombre del proyecto 2]**: breve descripción.
+-### 🍽️ [La Mimbre](https://github.com/kritziakathleen9-lgtm/lamimbre)
+Proyecto grupal: sitio web para un restaurante.
+
+- 👩‍💻 **Mi aporte:** desarrollé la página de **inicio**, la primera impresión del sitio.
+- 🤝 Trabajo en equipo con Git y GitHub.
+- 🛠️ **Stack:** HTML, CSS y JavaScript.
+- **[Nombre del proyecto 2]**: breve descripción (React + FastAPI).
 
 📫 Connect with me: 
 - krit.muoz.26@gmail.com
