@@ -14,9 +14,6 @@
 - 📫 How to reach me: **[LinkedIn](https://www.linkedin.com/in/kritzia-kathleen-mu%C3%B1oz-ortega-aa2177448/)**
 - ⚡ Fun fact: **Me puede la maquetación: no descanso hasta que el diseño quede pixel perfect 🎨**
 
-Construyo interfaces rápidas y accesibles, y las conecto con APIs en Python.
-Me gusta el ciclo completo: del componente en el navegador al endpoint que lo alimenta.
-
  ### Full Stack Web Development 🛠️
  ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
  ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
