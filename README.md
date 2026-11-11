@@ -1,10 +1,6 @@
-<h1 align="center">Hola, soy Kritzia Muñoz 👋</h1>
-
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&center=true&vCenter=true&width=435&lines=Frontend+Developer;React+%2B+Tailwind;Aprendiendo+FastAPI+%F0%9F%90%8D" alt="Typing SVG" />
+  <img src="saludo-detallado.svg" alt="Kritzia programando y saludando: Hola, soy Kritzia" width="800" />
 </p>
-
-### Frontend Developer + FastAPI
 
 - 🔭 Currently working on **[Wormhole](https://github.com/Wormhole-web/wormhole)**, una aplicación web de un videoclub con React y Tailwind.
 - 🌱 Currently learning **FastAPI** y cómo conectarlo con mis interfaces en React.
