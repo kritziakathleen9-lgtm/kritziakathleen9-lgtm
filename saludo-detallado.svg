@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" width="800" height="280" shape-rendering="crispEdges" role="img" aria-label="Kritzia programando en su computadora, se levanta y saluda: Hola, soy Kritzia" xmlns:c2pa="http://c2pa.org/manifest">
+  <title>Hola, soy Kritzia</title>
+  <style>
+    :root {
+      --hair:  #3b2a24;  /* color de pelo */
+      --skin:  #F2C9A5;  /* color de piel */
+      --shirt: #F75C7E;  /* camiseta */
+      --pants: #38B2AC;  /* pantalón */
+      --shoes: #ffffff;  /* zapatillas */
+      --glass: #222222;  /* montura de las gafas */
+    }
+    .seated   { animation: seated 10s infinite; }
+    .standing { animation: standing 10s infinite; }
+    @keyframes seated   { 0%,47% {opacity:1} 50%,97% {opacity:0} 100% {opacity:1} }
+    @keyframes standing { 0%,47% {opacity:0} 50%,97% {opacity:1} 100% {opacity:0} }
+
+    .code { fill: #F75C7E; }
+    .c2 { fill: #38B2AC; } .c3 { fill: #F7DF1E; } .c4 { fill: #61DAFB; }
+    .l1 { animation: l1 10s infinite steps(8); }
+    .l2 { animation: l2 10s infinite steps(8); }
+    .l3 { animation: l3 10s infinite steps(8); }
+    .l4 { animation: l4 10s infinite steps(8); }
+    @keyframes l1 { 0%,2% {width:0} 10%,47% {width:var(--w)} 50%,100% {width:0} }
+    @keyframes l2 { 0%,12% {width:0} 20%,47% {width:var(--w)} 50%,100% {width:0} }
+    @keyframes l3 { 0%,22% {width:0} 30%,47% {width:var(--w)} 50%,100% {width:0} }
+    @keyframes l4 { 0%,32% {width:0} 40%,47% {width:var(--w)} 50%,100% {width:0} }
+
+    .cursor { animation: blink 0.8s steps(1) infinite; }
+    @keyframes blink { 0%,50% {opacity:1} 51%,100% {opacity:0} }
+
+    .typing-arm { animation: bob 0.4s ease-in-out infinite; }
+    @keyframes bob { 0%,100% {transform: translateY(0)} 50% {transform: translateY(4px)} }
+
+    .steam { animation: steam 2s infinite; }
+    .steam2 { animation: steam 2s 1s infinite; }
+    @keyframes steam { 0% {transform: translateY(0); opacity:0} 30% {opacity:.8} 100% {transform: translateY(-14px); opacity:0} }
+
+    .wave-arm { transform-origin: 367px 122px; animation: wave 10s infinite; }
+    @keyframes wave {
+      0%,50% {transform: rotate(18deg)}
+      56% {transform: rotate(-22deg)} 62% {transform: rotate(18deg)}
+      68% {transform: rotate(-22deg)} 74% {transform: rotate(18deg)}
+      80% {transform: rotate(-22deg)} 86% {transform: rotate(18deg)}
+      92% {transform: rotate(-22deg)} 97%,100% {transform: rotate(18deg)}
+    }
+
+    .t1 { animation: t1 10s infinite steps(17); }
+    .t2 { animation: t2 10s infinite steps(28); }
+    @keyframes t1 { 0%,52% {width:0} 66%,97% {width:360px} 100% {width:0} }
+    @keyframes t2 { 0%,68% {width:0} 82%,97% {width:330px} 100% {width:0} }
+    .hello { font: bold 34px "Courier New", Courier, monospace; fill: #F75C7E; }
+    .role  { font: bold 16px "Courier New", Courier, monospace; fill: #38B2AC; }
+
+    .hair  { fill: var(--hair); }
+    .skin  { fill: var(--skin); }
+    .shirt { fill: var(--shirt); }
+    .pants { fill: var(--pants); }
+    .shoes { fill: var(--shoes); stroke: #888; stroke-width: 1; }
+    .glass { fill: none; stroke: var(--glass); stroke-width: 2; }
+  </style>
+
+  <defs>
+    <clipPath id="clipHello"><rect class="t1" x="410" y="90" width="0" height="50"/></clipPath>
+    <clipPath id="clipRole"><rect class="t2" x="410" y="150" width="0" height="30"/></clipPath>
+  </defs>
+
+  <!-- Suelo -->
+  <rect x="20" y="250" width="760" height="6" fill="#8b8b8b" opacity="0.5"/>
+
+  <!-- Escritorio -->
+  <rect x="40" y="196" width="270" height="10" fill="#8a5a3c"/>
+  <rect x="50" y="206" width="10" height="44" fill="#6b4329"/>
+  <rect x="290" y="206" width="10" height="44" fill="#6b4329"/>
+
+  <!-- Planta -->
+  <rect x="48" y="184" width="16" height="12" fill="#c8694a"/>
+  <rect x="52" y="170" width="4" height="14" fill="#3f9b4e"/>
+  <rect x="44" y="164" width="12" height="8" fill="#4fbf63"/>
+  <rect x="56" y="160" width="12" height="8" fill="#4fbf63"/>
+
+  <!-- Taza con vapor -->
+  <rect x="262" y="180" width="16" height="16" fill="#ffffff" stroke="#888" stroke-width="1"/>
+  <rect x="278" y="184" width="5" height="8" fill="none" stroke="#888" stroke-width="2"/>
+  <rect class="steam"  x="266" y="172" width="3" height="6" fill="#bbbbbb"/>
+  <rect class="steam2" x="272" y="172" width="3" height="6" fill="#bbbbbb"/>
+
+  <!-- Monitor -->
+  <rect x="80" y="72" width="170" height="112" fill="#2b2b3a"/>
+  <rect x="88" y="80" width="154" height="96" fill="#1e1e2e"/>
+  <rect x="155" y="184" width="20" height="12" fill="#2b2b3a"/>
+  <!-- Teclado -->
+  <rect x="100" y="190" width="120" height="6" fill="#4a4a5a"/>
+
+  <!-- Código en pantalla -->
+  <rect class="code l1" style="--w:90px"  x="98" y="92"  width="0" height="8"/>
+  <rect class="code c2 l2" style="--w:120px" x="108" y="108" width="0" height="8"/>
+  <rect class="code c3 l3" style="--w:72px"  x="108" y="124" width="0" height="8"/>
+  <rect class="code c4 l4" style="--w:104px" x="98" y="140" width="0" height="8"/>
+  <rect class="cursor" x="206" y="140" width="8" height="8" fill="#ffffff"/>
+
+  <!-- Kritzia sentada programando -->
+  <g class="seated">
+    <!-- silla -->
+    <rect x="310" y="130" width="8" height="70" fill="#4a4a5a"/>
+    <rect x="262" y="200" width="56" height="8" fill="#4a4a5a"/>
+    <rect x="286" y="208" width="8" height="42" fill="#4a4a5a"/>
+    <rect x="270" y="246" width="40" height="4" fill="#4a4a5a"/>
+    <!-- pelo largo atrás -->
+    <rect class="hair" x="288" y="102" width="26" height="76"/>
+    <!-- piernas -->
+    <rect class="pants" x="258" y="178" width="46" height="14"/>
+    <rect class="pants" x="258" y="192" width="14" height="52"/>
+    <!-- zapatilla -->
+    <rect class="shoes" x="248" y="244" width="26" height="8"/>
+    <!-- cuerpo -->
+    <rect class="shirt" x="278" y="134" width="30" height="46"/>
+    <!-- cabeza -->
+    <rect class="skin" x="272" y="106" width="28" height="28"/>
+    <rect class="hair" x="270" y="98" width="38" height="12"/>
+    <rect class="hair" x="270" y="106" width="6" height="8"/>
+    <!-- ojo y gafas (de perfil) -->
+    <rect x="276" y="116" width="3" height="4" fill="#222"/>
+    <rect class="glass" x="270" y="113" width="12" height="10"/>
+    <line x1="282" y1="117" x2="298" y2="117" stroke="var(--glass)" stroke-width="2"/>
+    <!-- mejilla -->
+    <rect x="276" y="124" width="5" height="3" fill="#F75C7E" opacity=".5"/>
+    <!-- brazo tecleando -->
+    <g class="typing-arm">
+      <line x1="286" y1="148" x2="226" y2="186" stroke="var(--shirt)" stroke-width="10"/>
+      <line x1="236" y1="180" x2="224" y2="187" stroke="var(--skin)" stroke-width="10"/>
+    </g>
+  </g>
+
+  <!-- Kritzia de pie saludando -->
+  <g class="standing">
+    <!-- pelo largo atrás -->
+    <rect class="hair" x="333" y="82" width="42" height="74"/>
+    <!-- piernas -->
+    <rect class="pants" x="341" y="166" width="11" height="78"/>
+    <rect class="pants" x="356" y="166" width="11" height="78"/>
+    <!-- zapatillas -->
+    <rect class="shoes" x="337" y="244" width="17" height="8"/>
+    <rect class="shoes" x="355" y="244" width="17" height="8"/>
+    <!-- cuerpo -->
+    <rect class="shirt" x="340" y="116" width="28" height="52"/>
+    <!-- brazo izquierdo abajo -->
+    <rect class="shirt" x="330" y="120" width="10" height="20"/>
+    <rect class="skin" x="330" y="140" width="10" height="24"/>
+    <!-- cabeza -->
+    <rect class="skin" x="340" y="88" width="28" height="28"/>
+    <rect class="hair" x="336" y="80" width="36" height="12"/>
+    <rect class="hair" x="336" y="88" width="6" height="24"/>
+    <rect class="hair" x="366" y="88" width="6" height="24"/>
+    <!-- ojos, gafas, sonrisa -->
+    <rect x="347" y="100" width="4" height="4" fill="#222"/>
+    <rect x="357" y="100" width="4" height="4" fill="#222"/>
+    <rect class="glass" x="344" y="97" width="10" height="9"/>
+    <rect class="glass" x="354" y="97" width="10" height="9"/>
+    <line x1="354" y1="101" x2="354" y2="101" stroke="var(--glass)" stroke-width="2"/>
+    <rect x="348" y="108" width="12" height="3" fill="#c0504d"/>
+    <rect x="344" y="106" width="4" height="3" fill="#F75C7E" opacity=".5"/>
+    <rect x="360" y="106" width="4" height="3" fill="#F75C7E" opacity=".5"/>
+    <!-- brazo saludando -->
+    <g class="wave-arm">
+      <rect class="skin" x="362" y="70" width="10" height="30"/>
+      <rect class="shirt" x="362" y="100" width="10" height="24"/>
+      <rect class="skin" x="360" y="64" width="14" height="10"/>
+    </g>
+  </g>
+
+  <!-- Texto -->
+  <g clip-path="url(#clipHello)">
+    <text class="hello" x="410" y="125">Hola, soy Kritzia</text>
+  </g>
+  <g clip-path="url(#clipRole)">
+    <text class="role" x="410" y="170">Frontend Developer + FastAPI</text>
+  </g>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo0Yjk4YzI3MS04MGFiLTRmZjUtYmVhMS1kZmMxYzMyNjBiOTIAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaL/lnl4pBr+v1UP943dCQkEAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDowM2U0YmQ1MS1hNGM2LTRkMWMtOTYxNC0wZThkZmZlYWVjNGVscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNo0nBL7vVHvuTxcCvnJj0a6wAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggoqNFAdAAPu8j9Jcw/meiMAng1kU0S+aUnB225dg0yPykZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaJgMVj+XGurpHGlz+qimjbkAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIA8VM9KfUIV/L0ueZCqQ1dDxGgR7TbiscdlCdIeuJaLbZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GSHXZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjRiOThjMjcxLTgwYWItNGZmNS1iZWExLWRmYzFjMzI2MGI5Mi9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjcwMTZkM2EyLWRkMGYtNGI2ZC1iZTk2LTkzNGMzMGQ2YWIyZnJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCCio0UB0AA+7yP0lzD+Z6IwCeDWRTRL5pScHbbl2DTI/KJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggYGsaKKiR6hk6Han2tvFUYst/0LNu4OOxVYJANbLlpaeiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggCQU/QWg8XrRfXbtmVEtE7f+TwHtcAgl0WyzPGHygSgN0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQLiVRig43G/YJb/aP5a9JLkG9v1bA/0rvIx0UyqFYhRC7cRVJmemDG8FY4c8CGAbXPWbXcM060C5Nihx4R5OzZ8=</c2pa:manifest></metadata></svg>
